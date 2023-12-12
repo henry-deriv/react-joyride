@@ -1,4 +1,4 @@
-/* eslint-disable testing-library/no-node-access,testing-library/no-render-in-lifecycle */
+/* eslint-disable testing-library/no-render-in-lifecycle */
 import React from 'react';
 
 import Scope from '~/modules/scope';
@@ -51,7 +51,6 @@ describe('modules/scope', () => {
     });
 
     it('should not have created an instance', () => {
-      // expect(Scope).toHaveBeenCalledTimes(1);
       expect(scope).toBeUndefined();
     });
   });
